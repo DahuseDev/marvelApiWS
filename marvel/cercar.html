@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="stylesheets/style.css" rel="stylesheet">
+        <script src="http://www.myersdaily.org/joseph/javascript/md5.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="javascripts/index.js"></script>
+    </head>
+    <body>
+        <div id="header-fals"></div>
+        <div id="header">
+            <img src="images/logo2.png" align="left">
+            <nav class="nav">
+
+                <a href="/"><p>Inici</p></a>
+                <a href="cercar"><p>Cercar</p></a>
+            </nav>
+        </div>
+        <div id="formulari">
+            <div id="cLeft">
+                <div class="black">
+                    <form id="form" onSubmit="return false;">
+                        <label for="nom">Nom</label>
+                        <input id="nom" type="text" name="nom">
+                        <button id="btn" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div id="cRight"><span id="loader"></span><div id="marvel"></div></div>
+        </div>
+        
+    </body>
+</html>

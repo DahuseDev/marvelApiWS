@@ -1,0 +1,488 @@
+/***Imports***/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+#header img{
+    height: 100%;
+}
+#header-fals{
+    height: 12%;
+}
+#header{
+    top: 0;
+    position: absolute;
+    z-index: 5;
+    height: 12%;
+    width: 100%;
+    padding:20px;
+    display:flex;
+    background-color: #F0131E;  
+}
+.nav{
+    margin-left: 5%;
+    font-weight: bold;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: right;
+    gap: 40px; 
+    font-size: 20px;
+}
+
+.nav a{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.nav a:hover{
+    background-size: 100% 2px;
+
+}
+
+
+/*Typer */
+
+.caixa{
+    border: 1px solid black;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    background-image: url("../images/container.jpg");
+    background-position-x:right;
+    background-size: cover; 
+    height: 600px;
+}
+.wrapper{
+    height: 40%;
+    display: grid;
+    place-items: center;
+}
+div#fosc {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+    
+.typing-demo{
+    width: 36ch; 
+    animation: typing 2s steps(22), blink .5s step-end infinite; 
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 7px solid; 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255); 
+    font-weight: 600;
+    font-size: 2em;
+}
+/****Animacions per el Typing***/
+@keyframes typing {
+    from{
+        width:  0
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent
+    }
+}
+/********************************/
+.bCaixa{
+    margin-top: 90px;
+    /*background-color:#F0131E;*/
+    background: rgba(0,0,0,0.6);
+    color: rgb(247, 0, 0); 
+   /*background-color: rgba(226, 85, 85,0.8);
+    /*background-image: linear-gradient(to right, red , rgb(226, 85, 85), rgb(220, 130, 130));*/
+    font-weight: 400;
+    font-size: 30px;
+    padding: 0.5em 1em;
+    border: 1px solid rgb(255, 0, 0);
+    transition: transform 1.3s, color 1.3s, border 1.3s;
+    height: 70px; 
+    width: 200px;
+    border-radius: 20px;
+}
+.bCaixa:hover{
+    transform: scale(1.1);
+    transition: transform 1.3s, color 1.3s, border 1.3s;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid white;
+    color: rgb(0, 222, 247); 
+}
+
+
+/* Content */
+
+.box{
+    padding:10%;
+    background-color: transparent;
+    color: white; 
+}
+.box img{
+    width: 100%;
+    border: 1px solid white;
+}
+
+
+/* .coses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) repeat(2, 0);
+    grid-template-rows: 1fr repeat(4, 0);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+ */
+
+
+.coses{
+    display: flex;
+    /* grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-gap:4px;
+    grid-template-areas:'1 2 3'; */
+    justify-content: space-between;
+    margin: 5% 10%;
+    padding-bottom: 5%;
+}
+.coses > *{
+    width: 25%;
+}
+
+
+#separator{
+    width: 1px;
+    border-right: 1px solid grey;
+}
+
+
+.text1,.text2,.text3{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* Cercar */
+
+.bCercar{
+    background-color: rgb(0, 0, 0);
+}
+.select{
+    display: flex;
+    /* grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-gap:4px;
+    grid-template-areas:'1 2 3'; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+    height: 88%;
+}
+.select > *{
+    height: 80%;
+    cursor: pointer;
+    background-color: rgb(108, 106, 106);
+    width: 30%;
+    border-radius: 10px;
+}
+
+body{
+    background-color: rgb(167, 166, 166);
+}
+
+.s1,.s2,.s3{
+    background-size: cover;
+    transform: border 1s;
+}
+
+.s1:hover,.s2:hover,.s3:hover{
+    transform: border 1s;
+    border: 1px solid white;
+}
+
+.s1{
+    background-image: url("/images/ironman2.png");
+}
+
+.s2{
+    background-image:url("/images/capitan.png");
+}
+.s3{
+    background-image:url("/images/thor.png");
+}
+
+
+
+.imag1 ,.imag2, .imag3 {
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    align-items:center; 
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-bottom: 30%;
+}
+
+.btext1, .btext2, .btext3 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10%;
+    padding-top: 20%;
+}
+
+.animacio{
+    animation: adalt; 
+    animation-duration: 2s;
+}
+
+.animaciobaix{
+    animation: abaix; 
+    animation-duration: 2s;
+}
+@keyframes adalt{
+    from{
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(-100%); 
+    }
+}
+
+@keyframes abaix{
+    from{
+        margin-top: 40%;
+    }
+
+    to{
+        margin-top: 0%;
+    }
+}
+
+
+.btn{
+    background-image: linear-gradient(right to );
+}
+
+.btn-select1,.btn-select2,.btn-select3{
+    
+    background-color:  #F0131E;  
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    padding: 0.5em 1em;
+    border: 4px solid black;  
+    border-radius: 5px;
+
+}
+
+
+/* Formulari */
+
+#formulari{
+    display: flex;
+    flex-direction: row;
+    height: 88%;
+}
+
+#cLeft{
+    
+    width: 35%;
+    height: 100%;
+    background-image: url("../images/fonsCerca.png");
+    background-size: cover;
+    background-position-x: center;
+}
+#cRight{
+    background-image: url("../images/fons2.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 100%;
+    background-size: cover;
+}
+
+.black{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+
+}
+#marvel{
+    width: 100%;
+    height: 100%;
+    display: none;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 5%;
+    overflow:auto;
+}
+form {
+    width: 70%;
+    padding: 16px;
+    border-radius: 10px;
+    background-color:#F0131E;  
+    display: grid;
+}
+
+form label[for="nom"],form input[name="nom"] {
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+
+form label[for="ordre"],form input[name="ordre"]{
+    font-weight: bold;
+    width: 180px;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #ffffff;  ;
+    margin: 8px 0;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+
+}
+
+form button[type="submit"]:hover {
+    cursor: pointer;
+    background-size: 100% 2px;
+
+}
+
+/* Loader */
+@keyframes loader{
+    0%{
+        transform: scale(0); 
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+#loader{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#loader::after, #loader::before{
+    position: absolute;
+    animation: loader 2s linear infinite; 
+    content: '';
+    top: 40%;
+    left: 60%;  
+    border: 8px solid rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#loader::after{
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+
+.box {
+    width: 100%;
+    height: 500px;
+}
+.box img{
+    width: 100%;
+}
+.box-front {
+    display: block;
+    width: 100%;
+    height: 100%;    
+
+}
+
+.box-front p{
+    font-weight: 900;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ff5100;
+
+}
+.box-back {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white; 
+}
+.box-back p{
+    margin-top: 10%;
+}
+
+.aparecer{
+    animation: aparecer;
+}
+
+.desaparecer{
+    animation: desaparecer;
+}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes desaparecer{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
